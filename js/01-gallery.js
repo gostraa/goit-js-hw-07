@@ -16,7 +16,7 @@ const markup = galleryItems.map(({ preview, original, description }) => {
   </li>`;
 }).join('');
 
-galleryList.innerHTML = markup;
+galleryList.insertAdjacentHTML("beforeend",markup);
 
 //  делегування подій на img
 galleryList.addEventListener('click', (event) => {             //додаємо слухач подій на весь список,щоб оптимізувати код
